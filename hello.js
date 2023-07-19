@@ -1,2 +1,2 @@
 console.log("Hello Word");
-console.log("Kishor ubhale")
+console.log("Kishor ubhale");
