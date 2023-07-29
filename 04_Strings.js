@@ -18,7 +18,7 @@ var result = firstName + lastName;
 console.log(`concatenation String is  ${result}`);
 var result = firstName.concat(lastName);
 console.log(`My Full name is ${result}`);
-console.log(firstName.concat(lastName));
+//console.log(firstName.concat(lastName));
 
 console.log(`------------------------------------`);
 var result = greet.indexOf('M');
