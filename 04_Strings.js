@@ -40,7 +40,7 @@ var greet = "      Good Morning      ";
 var result = greet.trim();
 console.log(`Before Trim String length : ${greet.length}, After Trim string is ${result} and it's length is ${result.length}`);
 var resultTrimEnd = greet.trimEnd();
-var trimEndLength = resultTrimEnd.length; 
+ var trimEndLength = resultTrimEnd.length; 
 var endSpaces = greet.length - trimEndLength;
 console.log(` End Spaces is : ${endSpaces} `);
 
@@ -54,3 +54,19 @@ console.log(`Result string is : ${result}`);
 console.log(`------------------------------------`);
 var result = greet.slice(5, 12);
 console.log(`Slice from index 5 till 12 is : ${result}`);
+
+console.log(`------------------------------------`);
+const s=new String('test');
+console.log(typeof s);
+console.log(s.valueOf());
+console.log( typeof s.valueOf());
+console.log(s.valueOf());
+var num=15;
+console.log(num.toString());
+console.log(`_________________________`);
+var r="JavaScript";
+console.log(r.substr(4,6));
+console.log(`_______________________`);
+var sstr="Ram Ram  Ram Ram";
+console.log(sstr.match(/am/g));
+

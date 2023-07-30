@@ -45,3 +45,5 @@ voteEligibility("30", "Jenny");
 voteEligibility(null, "Jenny");
 voteEligibility(undefined, "Jenny");
 voteEligibility(121, "Jenny");
+console.log(`-----------------------------------------------`);
+
