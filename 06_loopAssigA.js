@@ -29,13 +29,15 @@ function sumOfCube(){
 sumOfCube();
 console.log(`_________________________Old Position character____________________________________`);
 function oddPositiondChars(str){
+    var result="";
 for (let index = 0; index < str.length; index++) {
 const char=str.charAt(index);
     if (index%2!=0 && char!=' ') {
-        console.log(char);
+        result=result.concat(char).concat(" ");
         
     }
 }
+console.log(`old Position of string"${str}" is:${result}`);
 }
 oddPositiondChars("Hard work always pays back");
 oddPositiondChars("Soon I will be Angular IT Champ");
