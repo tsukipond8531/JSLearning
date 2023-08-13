@@ -45,6 +45,7 @@ const arrayNums=[2,3,4,56,90,400,49];
  emp.july_month="80,0000INR";
  employee_info.country="United Kindom"
  console.table(employee_info);
+ console.log(`emp detalails:`);
  console.table(emp);
 
 
