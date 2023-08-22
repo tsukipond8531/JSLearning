@@ -13,8 +13,10 @@ function College(name, year, city, founderName ){
 
  let shivaji = new College("Shivali College", 2001, "Karad", " Sunil Kadam");
  console.log(shivaji);
+ 
 
  College.prototype.country = "Bharath";
+
 
  console.log(`MIT Country : ${mit.country}`);
  console.log(`COEP Country : ${coep.country}`);

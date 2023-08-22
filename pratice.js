@@ -151,8 +151,18 @@
 
 //object
 
-const emp={};
-emp.name="Kishor";
-emp.age=23;
-console.log(emp);
+// const emp={};
+// emp.name="Kishor";
+// emp.age=23;
+// console.log(emp);
+class ram{
+    constructor(sita){
+        
+        this.sita=sita;
+    }
+}
+let siya= new ram("sitaram");
+let sham;
+console.log(siya);
+console.log(siya instanceof Object);
  

@@ -22,7 +22,8 @@ class Student {
   let studentSatya = new Student("Satya Nadella", 44, "ABC", "stya@gmail.com", "9867 8989 98");
   
   let studentSundar = new Student("Sundar Pichai", 55, "XYZ", "sundar@gmail.com", "9867 8989 98");
-  
+  //check the type
+ console.log( studentSundar instanceof Student);
   const array = [studentJenny, studentStew, studentElon, studentSatya, studentSundar];
   console.log(`Traversing array`);
   for (const student of array) {

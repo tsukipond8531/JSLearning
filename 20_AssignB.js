@@ -52,3 +52,14 @@ console.log(`--------------STEP1----------------------------`);
     console.log(`All employee Info: employee id: ${employee.emp_id} employee Name: ${employee.emp_name},employee salary is: ${employee.emp_salary} , company Name: ${employee.emp_company} ,employee dept : ${employee.emp_dept}  `);
     }
  });
+ console.log(`--------------STEP6----------------------------`);
+ let issorted=true;
+ for (const ele of array) {
+    if(array[ele]>array[ele+1]){
+    issorted=false;
+    break
+ }}if(issorted){
+   console.log("sorted");
+}else{
+    console.log(" not sorted");
+}
