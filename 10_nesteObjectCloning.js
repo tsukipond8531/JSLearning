@@ -22,8 +22,7 @@ let jenny = {
 
  
 
-let maria = JSON.parse(JSON.stringify(jenny)); // Deep clone 
-
+ let maria = JSON.parse(JSON.stringify(jenny)); // Deep clone 
 maria.marks.math = 100;
 
 console.log(`Jenny Details: ${jenny.marks.math}`);

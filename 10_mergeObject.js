@@ -1,3 +1,4 @@
+'use strict';
 let jenny = {
 
     fullName: "Jenny Musk",
@@ -10,7 +11,7 @@ let jenny = {
 
 }
 
-marks = {
+let mmarks = {
 
     physics: 100,
 
@@ -22,6 +23,6 @@ marks = {
 
  
 
-let mergedObject = Object.assign({} , jenny, marks);
-
+// let mergedObject = Object.assign({} , jenny, marks);
+let mergedObject={...jenny,...marks}
 console.table(mergedObject);

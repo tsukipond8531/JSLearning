@@ -10,5 +10,5 @@ function outer(){
     return innerFunction;
 }
 outer()();
-// let innerFun = outer();
-// innerFun();
+let innerFun = outer();
+innerFun();
