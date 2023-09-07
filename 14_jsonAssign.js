@@ -32,6 +32,8 @@ for (let index = names.length-5; index < names.length; index++) {
     
     
 }
+// let a=names.slice(6,9)
+// console.log(a);
 console.log(` last name is:${res}`);
 let year=emp.doj;
 let rese="";
@@ -41,4 +43,8 @@ for (let index = year.length-4; index < year.length; index++) {
     
 }
 console.log(` Year  is:${rese}`);
+
+// let date=new Date(emp.doj);
+
+// console.log(date.getFullYear());
 
