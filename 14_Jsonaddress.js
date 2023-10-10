@@ -17,6 +17,8 @@ console.log(` address type of ==>  ${typeof address}`);
 console.log(address);
 console.log(address.location);
 console.log(address.owners);
+let a=address.flatNo
+console.log(a);
 
 console.log(`==========================`);
 const student = {

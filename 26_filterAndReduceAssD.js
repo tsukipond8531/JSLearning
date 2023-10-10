@@ -58,22 +58,30 @@ for (const ele of employeenamestart) {
 }
 
 console.log(`------------------Average salary of the emplyoyee for all the department------------------------`);
-const employeeAll=arrayEmployees.filter((ele)=>{
-    return ele.emp_salary
-})
+// const employeeAll=arrayEmployees.filter((ele)=>{
+//     return ele.emp_salary
+// })
 // console.log(employeeAll);
-var sum=0;
-for (const ele of employeeAll) {
-    sum=sum+ele.emp_salary;
-}
-console.log(`Sum of number:${sum/arrayEmployees.length}`);
+// var sum=0;
+// for (const ele of employeeAll) {
+//     sum=sum+ele.emp_salary;
+// }
+const sun=arrayEmployees.reduce((run,ele)=>{
+return run+ele.emp_salary;
+},0)
+// console.log(`average :${sum/arrayEmployees.length}`);
+console.log(`Sum of number:${sun/arrayEmployees.length}`);
 console.log(`------------------Average salary of the emplyoyee for IT  department------------------------`);
 const employeeIT=arrayEmployees.filter((ele)=>{
     return ele.emp_dept==="IT";
 })
-// console.log(employeeIT);
-var sum=0;
-for (const ele of employeeIT) {
-    sum=sum+ele.emp_salary;
-}
-console.log(`Average salary dept IT:${sum/employeeIT.length}`);
+// // console.log(employeeIT);
+// var sum=0;
+// for (const ele of employeeIT) {
+//     sum=sum+ele.emp_salary;
+// }
+// console.log(`Average salary dept IT:${sum/employeeIT.length}`);
+const suna=employeeIT.reduce((run,ele)=>{
+  return run+ele.emp_salary;
+  },0)
+console.log(`Average salary dept IT:${suna/employeeIT.length}`);

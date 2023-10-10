@@ -49,4 +49,13 @@ const arrayNums=[2,3,4,56,90,400,49];
  console.table(emp);
 
 
-
+const arr=[];
+const arr2=[];
+console.log(arr==arr2);
+console.log(typeof arr2);
+function getAge(){
+    'use strict';
+    age=21;
+console.log(age);
+}
+getAge()

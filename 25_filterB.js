@@ -28,19 +28,22 @@ class Employee {
   const employeeTcs = arrayEmployees.filter((employee)=> {
     return employee.emp_company==='TCS';
   });
-  // console.log(employeeTcs);
+   console.table(employeeTcs);
   for (const employee of employeeTcs) {
     console.log(`Company Name: ${employee.emp_company}, Employee Name: ${employee.emp_name}`);
   }
 
-  // console.log("===== Find the TCS employees and get the list of employee names only ======");
-  // const tcsEmployees = arrayEmployees.filter((employee)=> {
-  //   return employee.emp_company==='TCS';
-  // });
-  // const employeeTcsNames = tcsEmployees.map((employee)=> {
-  //   return employee.emp_name;
-  // });
-  // console.log(employeeTcsNames);
+  console.log("===== Find the TCS employees and get the list of employee names only ======");
+  const tcsEmployees = arrayEmployees.filter((employee)=> {
+    return employee.emp_company==='TCS';
+  });
+  const employeeTcsNames = tcsEmployees.map((employee)=> {
+    return employee.emp_name;
+  });
+  console.log(employeeTcsNames);
+  arrayEmployees.filter(emp=>emp.emp_company=="TCS")
+  .map(emp=>emp.emp_name)
+  .forEach(emp=>console.log(emp))
 
   // console.log(`***************************`);
   // arrayEmployees.filter(employee=> employee.emp_company==='TCS')

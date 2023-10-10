@@ -11,7 +11,7 @@ let jenny = {
 
 }
 
-let mmarks = {
+let marks = {
 
     physics: 100,
 

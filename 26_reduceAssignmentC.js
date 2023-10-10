@@ -27,3 +27,9 @@ console.log(`sum of multiple of 5: ${ram}`);
     
 // }
 // console.log(su);
+console.log("Average salary from the reduce method");
+const array=[20,11,40,25,26];
+const newsum=array.reduce((run,ele)=>{
+    return run+ele;
+})
+console.log(`average ${newsum/array.length}`);
