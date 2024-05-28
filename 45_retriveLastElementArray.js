@@ -8,4 +8,4 @@ function retrive(arr, n=1){
         }
         
     }
-     retrive([1,2,3,4,5],2)
+     retrive([1,2,3,4,5],3)

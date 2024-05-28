@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check the Number</title>
+</head>
+<body>
+   <input type="textr" step="any" id="data">
+   <button onclick="check()">Check</button> 
+   <h1 id="res"></h1>
+   <script>
+    function check(){
+
+  
+    var value=document.getElementById("data").value;
+    // var b=Math.sign(number);
+    if(value>0){
+res=`${value} is Positive Number`;
+    }else if(value<0){
+        res=`${value} is Negative  Number`;
+    } else if(value==0){
+        res=`${value} is Zero`;
+    }else{
+        res=`${value} is Not A Number`;
+    }
+    document.getElementById("res").innerHTML=res;
+}
+   </script>
+</body>
+</html>

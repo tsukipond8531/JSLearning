@@ -4,9 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .child{
+            border: 2px solid red;
+            background-color: aqua;
+            
+      
+           
+        }
+        .parent{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid black;
+            background-color: blueviolet;
+            height: 500px;
+        }
+    </style>
 </head>
 <body>
-    <h2>List of Non Sematic tag</h2>
+    <!-- <h2>List of Non Sematic tag</h2>
     <ul>
         <li>hr</li>
         <li>br</li>
@@ -15,5 +32,41 @@
        <li>sub</li>
        <li>sup</li>
     </ul>
+    <script src="84_substringcontain.js"></script> -->
+    <h2>div with parent div</h2>
+    <div class="parent">
+        shamsunder
+        <div class="child">
+            <p>ram</p>
+        </div>
+    </div>
+    <script>
+//         for (let i = 1; i <=6; i++){
+//     for (let j = 1; j <=i; j++) {
+//         //  console.log("*");
+//          document.write("*")
+        
+//     }
+//     // console.log("<br>");
+//      document.write("<br>")
+   
+// }
+    
+        for (let i = 1; i <=6; i++){
+            for (let K = 1; K <=6-i; j++) {
+                //  console.log("*");
+                 document.write("&nbsp; &nbsp;")
+                
+            }
+            for (let j = 1; j <=i; j++) {
+                //  console.log("*");
+                 document.write("*")
+                
+            }
+            // console.log("<br>");
+             document.write("<br>")
+           
+        }
+        </script>
 </body>
 </html>

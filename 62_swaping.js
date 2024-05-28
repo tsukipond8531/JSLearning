@@ -1,0 +1,14 @@
+// var a=prompt("Enter value of a");
+// var b=prompt("Enter value of b");
+// console.log(` Before  swaping the value of a is ${a} \n Before  swaping The value of b is ${b}`);
+// var temp=a;
+// a=b;
+// b=temp;
+// console.log(` After swaping the value of a is ${a} \n After swaping The value of b is ${b}`);
+var a=parseInt(prompt("Enter value of a"));
+var b=parseInt(prompt("Enter value of b"));
+console.log(` Before  swaping the value of a is ${a} \n Before  swaping The value of b is ${b}`);
+a=a+b;
+b=a-b;
+a=a-b;
+console.log(` After swaping the value of a is ${a} \n After swaping The value of b is ${b}`);

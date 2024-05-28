@@ -49,9 +49,55 @@ elementh1.appendChild(elementtext2);
 const elementJsTopics2 =document.querySelector('#heading');
 elementJsTopics2.appendChild(elementh1);
 
+let ele=document.createElement('li');
+let text=document.createTextNode('Angular');
+ele.appendChild(text);
+let mainele=document.querySelector('#JsTopics');
+mainele.appendChild(ele);
+
+
+
 //create element in div
 const elementspan=document.createElement('span');
 const elementtext3=document.createTextNode('Follow me on social meadia')
 elementspan.appendChild(elementtext3);
 const elementdiv=document.querySelector('#title');
 elementdiv.appendChild(elementspan);
+
+//remove the html element
+const controlele=document.querySelector('#Control');
+const parentele=document.querySelector('#JsTopics');
+parentele.removeChild(controlele);
+//css property
+const element2=document.querySelector('#topics');
+element2.style.color="red";
+element2.style.fontFamily="Arial'"
+
+
+
+//event handling
+//1 way
+function show(){
+    alert("hey kishor you click me bro")
+}
+//2nd way
+const elementh3=document.querySelector('#selector');
+elementh3.addEventListener('click',()=>{
+    alert("You click me  Gajanan sir")
+})
+//3nd way
+const elementh4=document.querySelector('#topics');
+elementh4.addEventListener('click',function(){
+    alert("You click me  kishor sir")
+})
+
+//chage the color when mouseover and mouseout
+ const BtnSubmit=document.querySelector('#btnSubmit');
+ BtnSubmit.addEventListener('mouseover',()=>{
+    btnSubmit.style.background="red"
+    btnSubmit.style.color="white"
+ })
+ BtnSubmit.addEventListener('mouseout',()=>{
+    btnSubmit.style.background="blue"
+    btnSubmit.style.color="white"
+ })

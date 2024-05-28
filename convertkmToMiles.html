@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covert kms to Miles</title>
+</head>
+<body>
+    <input type="Number" id="data" step="any "class=" form-control">kms
+    <button type="button" onclick="covert()">Convert</button>Miles
+    <h1 id="result"></h1>
+    <script>
+    
+      function covert(){
+        const kms=document.getElementById('data').value;
+        const factor=0.621371;
+            var miles=kms*factor;
+           document.getElementById("result").innerHTML=`${miles} Miles`;
+
+      }
+
+    </script>
+</body>
+</html>

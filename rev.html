@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+#parent{
+    background-color: cadetblue;
+    color: white;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.child{
+    background-color: red;
+    color: white;
+  
+}
+#parent div:nth-child(3){
+    color: aqua;
+}
+ p 
+ ::first-line{
+    text-transform:uppercase ;
+
+    
+}
+    </style>
+</head>
+<body>
+    <div id="parent">
+        
+        <div class="child"> ram</div>
+        <div ><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis neque architecto ut. Ab natus incidunt voluptates voluptas atque sapiente accusamus nesciunt dolores eos?</p> mere ram</div>
+        <div >hamre ram ram</div>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p>Lorem ipsum <span>dolor sit, amet consectetur adipisicing elit. Exercitationem, maxime vel, similique voluptatem nesciunt nulla architecto sunt minus necessitatibus quaerat sint. Mollitia rerum reiciendis, vitae quae nostrum nemo nobis unde?</span></p>
+</body>
+</html>

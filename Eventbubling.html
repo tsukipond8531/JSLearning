@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event bubbling</title>
+    <style>
+ .div-top{
+background-color: red;
+padding: 10px;
+}
+.div-inner{
+    background-color: blue;
+padding: 10px;
+
+}
+.div-middle{
+    background-color: cadetblue;
+padding: 10px;
+    
+}
+    </style>
+    <script>
+       function topdiv(){
+        alert("called top div")
+       }
+       function middlediv(){
+        alert("called middle div")
+       }
+       function innerdiv(){
+        alert("called inner div")
+        event.stopPropagation()
+       }
+
+    </script>
+    <script src="prototype.js">
+        
+    </script>
+</head>
+<body>
+    <h1>JavaScript Event bubbling</h1>
+    <!-- <div onclick="alert('Top div')">
+        top div
+        <button onclick="alert('button alert')">button</button>
+    </div> -->
+    <div onclick="topdiv()" class="div-top">
+        top div
+        <div onclick="middlediv()" class="div-middle">
+            middle div
+            
+      
+        <div onclick=" innerdiv()" class="div-inner">
+            inner div
+            
+        </div>
+    </div>
+    </div>
+   
+    
+</body>
+</html>
